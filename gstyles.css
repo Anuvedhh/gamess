@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+canvas {
+    display: block;
+}
+
+#scoreboard {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    color: chartreuse;
+    background-color:transparent;
+}
+
+#gameOverScreen {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: red;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#restartBtn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    background: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+
+/* Controls */
+.controls {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+   
+}
+
+.control-btn {
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    bottom: 10px;
+    border: none;
+    background: white;
+    color: black;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.movement {
+    position: absolute;
+    right: 20px;
+    bottom: 0px;
+    display: flex;
+    gap: 20px;
+    size: 50px;
+    
+}
+
+.fire {
+    position: absolute;
+    left: 20px;
+    bottom: 5px;
+}

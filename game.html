@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,">
+    <title>Advanced 2D Shooting Game</title>
+    <link rel="stylesheet" href="gstyles.css">
+</head>
+<body>
+    <div id="scoreboard">
+        Score: <span id="score">0</span> <br>
+        User: <span id="playerName"></span>
+        
+    </div>
+
+    <div id="gameOverScreen">
+        Game Over!<br>
+        <button id="restartBtn">Restart</button>
+    </div>
+
+    <canvas id="gameCanvas"></canvas>
+
+    <!-- Controls -->
+    <div class="controls">
+        <button class="control-btn fire" id="shootBtn">🔫</button>
+        <div class="movement">
+            <button class="control-btn" id="leftBtn">⬅️</button>
+            <button class="control-btn" id="rightBtn">➡️</button>
+        </div>
+    </div>
+
+    <script src="gscript.js"></script>
+</body>
+</html>
